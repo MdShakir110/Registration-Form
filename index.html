@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font  -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Registration</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="" id="registrationForm">
+        <h1>Registration Form</h1>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" id="fullName" placeholder="Full Name" />
+            <i class="bx bxs-user"></i>
+            <div class="NameError"></div>
+          </div>
+          <div class="input-field">
+            <input type="text" id="username" placeholder="Username" />
+            <i class="bx bxs-user"></i>
+            <div class="UserError"></div>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="email" id="email" placeholder="Email" />
+            <i class="bx bxs-envelope"></i>
+            <div class="emailError"></div>
+          </div>
+          <div class="input-field">
+            <input type="number" id="phoneNumber" placeholder="Phone Number" />
+            <i class="bx bxs-phone"></i>
+            <div class="PhoneError"></div>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="password" id="password" placeholder="password" />
+            <i class="bx bxs-lock-alt"></i>
+            <div class="PassError"></div>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Confirm Password"
+            />
+            <i class="bx bxs-lock-alt"></i>
+            <div class="ConfPassError"></div>
+          </div>
+        </div>
+        <label for=""
+          ><input type="checkbox" />I hearby declare that the above information
+          provided is true and correct</label
+        >
+
+        <button type="submit" class="btn">Register</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
